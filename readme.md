@@ -22,7 +22,7 @@ npm install -g tsc
 
 Clone this repo using git into a local repo.
 
-`git clone`
+`git clone https://github.com/codex-academy/typescript-intro`
 
 ## Use VS Code as your editor.
 
