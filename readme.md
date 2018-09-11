@@ -36,7 +36,7 @@ Use this command to generate JavaScript from the TypeScript code:
 tsc -w
 ```
 
-Or by using `CTRL-Shift-B` in VS Code.
+Or by using `CTRL-Shift-B` in VS Code select `tsc: watch`.
 
 Run the JavaScript generated in the `dist` folder.
 
