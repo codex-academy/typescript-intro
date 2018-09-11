@@ -1,11 +1,10 @@
-import { language } from "./greet";
-
-export function Greeter() {
-
-    const namesGreeted : {[key : string] : number} = {};
-
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const greet_1 = require("./greet");
+function Greeter() {
+    const namesGreeted = {};
     // private method
-    function addName(name: string) {
+    function addName(name) {
         if (!namesGreeted[name]) {
             namesGreeted[name] = 1;
         }
@@ -13,36 +12,30 @@ export function Greeter() {
             namesGreeted[name]++;
         }
     }
-
-    function greet(name: string, chosenLanguage: language) {
+    function greet(name, chosenLanguage) {
         addName(name);
-
-        if (chosenLanguage === language.afr) {
+        if (chosenLanguage === greet_1.language.afr) {
             return "Goeie more, " + name;
         }
-    
-        if (chosenLanguage === language.eng) {
+        if (chosenLanguage === greet_1.language.eng) {
             return "Good morning, " + name;
         }
-    
-        if (chosenLanguage === language.xhosa) {
+        if (chosenLanguage === greet_1.language.xhosa) {
             return "Molo, " + name;
         }
     }
-
-    function counter() : number {
+    function counter() {
         return Object.keys(namesGreeted).length;
     }
-
-    function greeted(name: string) : string {
+    function greeted(name) {
         if (namesGreeted[name]) {
             return `${name} has been greeted ${namesGreeted[name]} time/s`;
         }
         return "Invalid name";
     }
-
     return {
         greet,
         greeted
-    }
+    };
 }
+exports.Greeter = Greeter;
