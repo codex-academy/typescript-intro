@@ -28,6 +28,14 @@ Clone this repo using git into a local repo.
 
 Use VS Code as your editor as it's go good TypeScript support.
 
+Change into the `typescript-intro` folder in the terminal and type:
+
+```
+code .
+```
+
+To open the project in VS Code.
+
 ## Generate JavaScript
 
 Use this command to generate JavaScript from the TypeScript code:
@@ -68,10 +76,10 @@ Copy the code inside the `greeter.ts` file into a new file called `the-greeter.t
 
 > Use the `this` modifier to reference class instance variables.
 
-The `namesGreeted` instanace variable should be declared like this:
+The `namesGreeted` instance variable should be declared like this:
 
 ```
-private namesGreeted
+private namesGreeted;
 ```
 
 And can be accessed like this:
