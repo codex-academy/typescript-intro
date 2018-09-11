@@ -28,6 +28,18 @@ Clone this repo using git into a local repo.
 
 Use VS Code as your editor as it's go good TypeScript support.
 
+## Generate JavaScript
+
+Use this command to generate JavaScript from the TypeScript code:
+
+```
+tsc -w
+```
+
+Run the JavaScript generated in the `dist` folder.
+
+
+
 
 
 
